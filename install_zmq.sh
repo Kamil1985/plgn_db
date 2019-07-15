@@ -4,9 +4,8 @@ cd libzmq
 mkdir cmake-build && cd cmake-build
 cmake .. && make -j 4
 make test && make install && sudo ldconfig
-make test
 cd ..
-apt-get install libtools
+apt-get install libtool
 apt-get install pkg-config
 git clone git://github.com/zeromq/czmq.git
 cd czmq
