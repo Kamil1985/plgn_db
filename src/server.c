@@ -136,6 +136,9 @@ bool db_exist_error() {
 
 int main (void)
 {	
+	system("gnome-terminal -x sh -c ""../redis-5.0.5/src/redis-server;  bash &""");
+	sleep(2);
+	puts("Welcome to PLGN_SERVER. Waiting for clients..\n"); 	
 	void *context = zmq_ctx_new ();
 	pthread_t server_thread, publisher_thread;
 	pthread_create (&server_thread, NULL, start_server, context);
