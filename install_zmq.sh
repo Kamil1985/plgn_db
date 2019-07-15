@@ -9,7 +9,7 @@ apt-get install libtool
 apt-get install pkg-config
 git clone git://github.com/zeromq/czmq.git
 cd czmq
-./autogen.sh && ./configure && make check
+./autogen.sh && ./configure && make 
 sudo make install
 sudo ldconfig
 cd ..
